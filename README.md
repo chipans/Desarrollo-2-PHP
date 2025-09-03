@@ -75,7 +75,7 @@ Familiarizarse con el proceso de instalación de **Composer**, **PHP** y **Larav
 php -v
 Si no lo tienes, descárgalo aquí: https://www.php.net/downloads.php
 
-###v🔹 Paso 2: Instalar Composer (v2.8.8)
+### 🔹 Paso 2: Instalar Composer (v2.8.8)
 Asegúrate de tener **PHP 8.1.32** instalado:
 
 ### 🔹 Paso 2: Instalar Composer (v2.8.8)
