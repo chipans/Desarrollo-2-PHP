@@ -19,48 +19,117 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 - [Robust background job processing](https://laravel.com/docs/queues).
 - [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+# Proyecto Laravel 10.3.3  
+# Universidad Adventista de Bolivia  
+## Taller de Programación  
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 📌 Descripción  
+Este documento detalla **paso a paso** cómo instalar y configurar correctamente:  
+- **PHP 8.1.32**  
+- **Composer 2.8.8**  
+- **Laravel 10.3.3**  
+Para tener un entorno de desarrollo funcional y listo para trabajar en proyectos Laravel.  
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 📝 Prerrequisitos  
+1. Tener una cuenta de **GitHub**: [https://github.com](https://github.com)  
+2. Instalar **PHP 8.1.32 o superior**: [https://www.php.net/downloads.php](https://www.php.net/downloads.php)  
+3. Instalar **Visual Studio Code**: [https://code.visualstudio.com](https://code.visualstudio.com)  
 
-## Laravel Sponsors
+---
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## 🎯 Objetivo  
+Familiarizarse con el proceso de instalación de **Composer**, **PHP** y **Laravel**, practicando los pasos básicos para configurar el entorno de desarrollo.  
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+## 🚀 Pasos de Instalación
 
-## Contributing
+### 🔹 Paso 1: Verificar e Instalar PHP
+Asegúrate de tener **PHP 8.1.32** instalado:
+```bash
+php -v
+Si no lo tienes, descárgalo aquí: https://www.php.net/downloads.php
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+🔹 Paso 2: Instalar Composer (v2.8.8)
+Opción 1: Instalar Composer con comandos
+bash
+Copiar código
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php composer-setup.php
+php -r "unlink('composer-setup.php');"
+Luego, mueve Composer a una ubicación global:
 
-## Code of Conduct
+bash
+Copiar código
+mv composer.phar /usr/local/bin/composer
+Opción 2: Instalar Composer con gestor de paquetes
+Consulta la guía oficial: https://getcomposer.org/download
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Verifica la instalación:
 
-## Security Vulnerabilities
+bash
+Copiar código
+composer -V
+🔹 Paso 3: Crear Proyecto con Laravel 10.3.3
+Opción 1: Última versión de Laravel 10.x
+bash
+Copiar código
+composer create-project laravel/laravel nombre-del-proyecto
+Opción 2: Versión exacta Laravel 10.3.3
+bash
+Copiar código
+composer create-project laravel/laravel="10.3.3" nombre-del-proyecto
+🔹 Paso 4: Probar el Proyecto
+Entra a tu carpeta y ejecuta el servidor de desarrollo:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+bash
+Copiar código
+cd nombre-del-proyecto
+php artisan serve
+Abre en tu navegador:
+http://127.0.0.1:8000
 
-## License
+🔧 Comandos Rápidos de Composer
+Instalar dependencias:
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+bash
+Copiar código
+php composer.phar install
+Instalar Laravel:
+
+bash
+Copiar código
+composer create-project laravel/laravel nombre-del-proyecto
+📚 Recursos de Aprendizaje
+Documentación oficial de PHP
+
+Documentación oficial de Composer
+
+Documentación oficial de Laravel
+
+Laravel Bootcamp
+
+📝 Notas
+Todos los pasos están probados en PHP 8.1.32, Composer 2.8.8 y Laravel 10.3.3.
+
+Asegúrate de tener conexión a internet y permisos de administrador al mover Composer a /usr/local/bin/.
+
+yaml
+Copiar código
+
+---
+
+📌 **Qué incluye este README:**
+- Pasos numerados y ordenados (PHP → Composer → Laravel).  
+- Comandos claros con bloques de código.  
+- Enlaces oficiales destacados.  
+- Opción de instalar versiones exactas.  
+- Sección de notas y recursos de aprendizaje.  
+
+---
+
+¿Quieres que le agregue también una **sección de pasos para subir el proyecto a GitHub (git init, add, commit, push)** al final?
