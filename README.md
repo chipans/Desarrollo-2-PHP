@@ -32,6 +32,39 @@
 
 ---
 
+# 📚 Documentación del Proyecto
+
+---
+
+## Universidad
+**Universidad Adventista de Bolivia**
+
+---
+
+## Materia
+**Taller de Programación / Desarrollo Web Backend con PHP y Laravel**
+
+---
+
+## Nombre del estudiante
+**Jorge Chipana**
+
+---
+
+## Nombre del proyecto
+**Desarrollo-2-PHP**
+
+---
+
+##  Descripción
+Este proyecto está desarrollado con **Laravel 10.3.3** y tiene como objetivo aprender a:  
+- Configurar un entorno de desarrollo profesional.  
+- Implementar funcionalidades de Laravel.  
+- Usar **Git y GitHub** para control de versiones.  
+- Ejecutar el proyecto en un servidor local.  
+
+---
+
 ## 📌 Introducción
 Este proyecto documenta **cómo configurar un entorno de desarrollo Laravel 10.3.3** desde cero, usando:  
 
@@ -103,10 +136,10 @@ Opción 2 - Usar instalador oficial
 ## 🔹 Paso 3: Instalar Laravel
 Última versión Laravel 10.x
 ### Copiar código
-composer create-project laravel/laravel nombre-del-proyecto
+composer create-project laravel/laravel Desarrollo-2-PHP
 Versión exacta Laravel 10.3.3
 ### Copiar código
-composer create-project laravel/laravel="10.3.3" nombre-del-proyecto
+composer create-project laravel/laravel="10.3.3" Desarrollo-2-PHP
 
 ## 🔹 Paso 4: Ejecutar el Servidor de Desarrollo
 ### Copiar código
@@ -114,6 +147,31 @@ cd nombre-del-proyecto
 php artisan serve
 Abrir en el navegador:
 ➡️ http://127.0.0.1:8000
+---
+## 🔹 4. Configurar Variables de Entorno
+
+Copia el archivo .env.example:
+cp .env.example .env
+Genera la clave:
+php artisan key:generate
+
+### 🔹 4.1. Ejecutar Migraciones
+php artisan migrate
+
+### 🔹 4.2. Levantar el Servidor
+php artisan serve
+
+
+Abrir en navegador:
+➡️ http://127.0.0.1:8000
+
+### 🔹 4.3. Subir a GitHub
+git init
+git add .
+git commit -m "Proyecto Laravel listo"
+git branch -M main
+git remote add origin https://github.com/usuario/Desarrollo-2-PHP.git
+git push -u origin main
 
 ### 🚀 Comandos Rápidos
 Acción	Comando
@@ -138,7 +196,7 @@ git init
 git add .
 git commit -m "Proyecto Laravel 10.3.3 listo"
 git branch -M main
-git remote add origin https://github.com/usuario/nombre-repo.git
+git remote add origin https://github.com/chipans/Desarrollo-2-PHP.git
 git push -u origin main
 ### 📝 Notas
 Probado en PHP 8.1.32, Composer 2.8.8, Laravel 10.3.3.
