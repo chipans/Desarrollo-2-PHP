@@ -54,65 +54,64 @@ Familiarizarse con el proceso de instalación de **Composer**, **PHP** y **Larav
 ## 🚀 Pasos de Instalación
 
 ### 🔹 Paso 1: Verificar e Instalar PHP
-Asegúrate de tener **PHP 8.1.32** instalado:
-<hr>
 php -v
 Si no lo tienes, descárgalo aquí: https://www.php.net/downloads.php
-<hr>
-🔹 Paso 2: Instalar Composer (v2.8.8)
+
+###v🔹 Paso 2: Instalar Composer (v2.8.8)
+Asegúrate de tener **PHP 8.1.32** instalado:
+
+### 🔹 Paso 2: Instalar Composer (v2.8.8)
 Opción 1: Instalar Composer con comandos
-<hr>
-Copiar código
+
+# Copiar código
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 php composer-setup.php
 php -r "unlink('composer-setup.php');"
 Luego, mueve Composer a una ubicación global:
 
-<hr>
-Copiar código
+
+# Copiar código
 mv composer.phar /usr/local/bin/composer
 Opción 2: Instalar Composer con gestor de paquetes
 Consulta la guía oficial: https://getcomposer.org/download
-<hr>
-Verifica la instalación:
-<hr>
+
+# Verifica la instalación:
 Copiar código
 composer -V
 
-<hr>
-🔹 Paso 3: Crear Proyecto con Laravel 10.3.3
+
+### 🔹 Paso 3: Crear Proyecto con Laravel 10.3.3
 Opción 1: Última versión de Laravel 10.x
-<hr>
-Copiar código
+
+# Copiar código
 composer create-project laravel/laravel Desarrollo-2-PHP
 Opción 2: Versión exacta Laravel 10.3.3
-<hr>
-Copiar código
+
+# Copiar código
 composer create-project laravel/laravel="10.3.3" Desarrollo-2-PHP
 
-<hr>
-🔹 Paso 4: Probar el Proyecto
+
+### 🔹 Paso 4: Probar el Proyecto
 Entra a tu carpeta y ejecuta el servidor de desarrollo:
-<hr>
-Copiar código
+
+# Copiar código
 cd nombre-del-proyecto
 php artisan serve
 Abre en tu navegador:
 http://127.0.0.1:8000
-<hr>
+>
 
-🔧 Comandos Rápidos de Composer
+## 🔧 Comandos Rápidos de Composer
 Instalar dependencias:
-<hr>
-Copiar código
+
+# Copiar código
 php composer.phar install
 Instalar Laravel:
 
-<hr>
-Copiar código
+# Copiar código
 composer create-project laravel/laravel Desarrollo-2-PHP
-<hr>
-📚 Recursos de Aprendizaje
+
+## 📚 Recursos de Aprendizaje
 Documentación oficial de PHP
 
 Documentación oficial de Composer
@@ -120,9 +119,9 @@ Documentación oficial de Composer
 Documentación oficial de Laravel
 
 Laravel Bootcamp
-<hr>
 
-📝 Notas
+
+## 📝 Notas
 Todos los pasos están probados en PHP 8.1.32, Composer 2.8.8 y Laravel 10.3.3.
 
 Asegúrate de tener conexión a internet y permisos de administrador al mover Composer a /usr/local/bin/.
@@ -130,15 +129,14 @@ Asegúrate de tener conexión a internet y permisos de administrador al mover Co
 yaml
 Copiar código
 
-<hr>
 
-📌 **Qué incluye este README:**
+
+### 📌 **Qué incluye este README:**
 - Pasos numerados y ordenados (PHP → Composer → Laravel).  
 - Comandos claros con bloques de código.  
 - Enlaces oficiales destacados.  
 - Opción de instalar versiones exactas.  
 - Sección de notas y recursos de aprendizaje.  
 
-<hr>
 
 ¿Quieres que le agregue también una **sección de pasos para subir el proyecto a GitHub (git init, add, commit, push)** al final?
